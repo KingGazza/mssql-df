@@ -7,7 +7,7 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=${SQL_PASSWORD}
-      - MSSQL_PID=${MSSQL_EDITION}
+      - MSSQL_PID=Developer
     volumes:
       - mssql_data:/var/opt/mssql
     restart: always
